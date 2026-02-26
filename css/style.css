@@ -29,7 +29,7 @@ body {
     }
 }
 
-/* HTML PROFIL */
+
 
 .Konten_Utama{
     position: relative;
@@ -51,9 +51,123 @@ body {
     display: flex;
     justify-content: center;
 }
+/* INDEX HTML */
+
+.Logo{
+    position: absolute;
+    top: 0%;
+    display: flex;
+    justify-content: center;
+}
+
+.Logo img {
+    width: 45%;
+    height: auto;
+}
+
+.kotak-CTA {
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: auto;
+}
+
+ 
+.kotak-CTA img {
+    width: 300px;
+    max-width: none;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+
+.kotak-CTA h1 {
+    position: absolute;
+    font-family: 0.9rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    margin: 0;
+    font-weight: bold;
+    font-size: 27px;
+    color: var(--toffee-brown);
+    
+    z-index: 2;
+    box-shadow:0 4px 8px rgba(0, 0, 0, 0.1); ;
+}
+
+.kotak-CTA h1 a{
+    text-decoration: none;
+    color: var(--toffee-brown);
+    cursor: pointer;
+    transition: 0.4s;
+}
+.kotak-CTA h1 a:hover {
+    color:var(--golden-sand) ;
+}
+
+
+.kotakNavigasi{
+    position: absolute;
+    display: flex;
+    top: 40%;
+    left: 0%;
+    width: auto;
+}
+.Haisticker {
+    left: 0%;
+    flex: 5;
+    height: auto;
+}
+
+.Haisticker img {
+    width: 300px;
+    height: auto;
+    max-width: none;
+    margin-left: -40px;
+}
+
+.buttonNavigasi{
+    display: flex;
+    flex: 5;
+    flex-direction: column;
+    justify-content: center;
+    max-width: none;
+    width: 150px;
+    z-index: 2;
+    margin-left: -60px;
+    gap : 15px;
+}
+
+.BtnNav{
+    padding: 14px 25px;
+    border-radius: 40px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: 0.3s ease;
+}
+.BtnNav a {
+    text-decoration: none;
+    color: white;
+}
+.BtnNav:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateX(-5px);
+}
 
 
 
+
+/* HTML PROFIL */
 .Teks_Profil{
     position: absolute;
     top: 10%;
@@ -345,7 +459,6 @@ body {
     justify-content: space-between;
     margin-top: 30px;
     padding: 0 10px;
-    
 }
 
 #BackBtn{
@@ -381,4 +494,69 @@ body {
     text-decoration: none;
     color: white;
 }
+
+
+/* MITOS ATAU FAKTA */
+
+.KontainerKonten {
+    position: absolute;
+    width: 100%;
+}
+
+
+    
+.Navbar {
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Navbar .logo{
+    max-width: none;
+    
+}
+
+.Navbar .logo img {
+    width:90px;
+   
+}
+
+.bundar {
+    width: 80%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.listBundar{
+    background-color: var(--lavender-grey);
+    margin: 5px;
+    width: 20px;
+    height:20px;
+    border-radius: 50%;
+}
+.listBundarKosong{
+    border: 1px solid var(--lavender-grey);
+    margin: 5px;
+    width: 20px;
+    height:20px;
+    border-radius: 50%;
+}
+.KetMitosFakta {
+    position: absolute;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: auto;
+}
+
+.KotakKuis{
+    margin-top: 100px;
+    top: 60%;
+}
+
 
