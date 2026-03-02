@@ -43,7 +43,10 @@ body {
     max-width: 100%;
     object-fit: cover;
     display: block;
+    top: 0;
+    left: 0;
     border-radius: 5px;
+    z-index: -1;
 
 }
 
@@ -501,6 +504,11 @@ body {
 .KontainerKonten {
     position: absolute;
     width: 100%;
+    top:0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -511,7 +519,7 @@ body {
     left: 5%;
     width: 90%;
     display: flex;
-    justify-content: space-between;
+
 }
 
 .Navbar .logo{
@@ -533,30 +541,266 @@ body {
 }
 
 .listBundar{
-    background-color: var(--lavender-grey);
+    background-color: var(--toffee-brown);
     margin: 5px;
     width: 20px;
     height:20px;
     border-radius: 50%;
 }
 .listBundarKosong{
-    border: 1px solid var(--lavender-grey);
+    border: 1px solid var(--toffee-brown);
     margin: 5px;
     width: 20px;
     height:20px;
     border-radius: 50%;
 }
-.KetMitosFakta {
+
+.KetHalSatuu {
+    background-color: var(--toffee-brown);
     position: absolute;
-    top: 40%;
-    transform: translate(-50%, -50%);
+    left: 0;
+    top: 30%;
+    padding: 5px 21px;
+    border-radius:0px 10px 10px 0px;
+    box-shadow: 2px 2px 15px -7px #000000;
+}
+
+.KetHalSatuu p{
+    color: white;
+}
+
+.KetMitosFakta {
+    margin-top: 100px;
+    max-width: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
     width: auto;
 }
 
-.KotakKuis{
-    margin-top: 100px;
-    top: 60%;
+.KetMitosFakta h1 {
+    color: var(--toffee-brown);
+}
+.KetMitosFakta p {
+    color: var(--toffee-brown);
 }
 
+
+.KotakKuis{
+    margin-top:50px;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 15px; 
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    height: 350px;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+.KartuPertanyaan{
+    margin: 10px;
+    width: 85%;
+    max-width: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.KartuPertanyaan p {
+    color: var(--toffee-brown);
+    font-weight: bolder;
+    text-shadow: 1px 1px 5px -5px #000000;
+}
+
+.grupBtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    margin-top: 20px;
+    gap: 15px;
+}
+
+
+
+.BtnMitos{
+    height: 50px;
+    width: auto;
+    border-color: var(--toffee-brown);
+    background-color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.BtnMitos:hover{
+    transform: scale(90%);
+}
+
+.BtnFakta{
+    height: 50px;
+    width: auto;
+    border-color: var(--toffee-brown);
+    background-color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.BtnFaktas:hover{
+    transform: scale(90%);
+}
+
+.modul {
+    background-color: white;
+    position: relative;
+    margin: -40px auto 0 auto;
+    max-width: 98%;
+    border-radius: 20px;
+    height: auto;
+    padding: 20px 0;
+}
+
+.kotakModul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.kotakModul h3 {
+    color: var(--toffee-brown);
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.BtnModul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.BtnMateri {
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    height: 50px;
+    width: auto;
+    background-color: var(--toffee-brown);
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.BtnMateri a {
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    position: relative;
+    margin: 430px auto 0 auto;
+    display: flex;
+    text-align: center;
+}
+
+footer p {
+    color: white;
+    font-size: 12px;
+}
+
+.KetHalDuaa {
+    background-color: var(--toffee-brown);
+    position: absolute;
+    left: 0;
+    top: 5%;
+    padding: 5px 21px;
+    border-radius:0px 10px 10px 0px;
+    box-shadow: 2px 2px 15px -7px #000000;
+    z-index: 2;
+}
+
+.KetHalDuaa p {
+    color: white;
+}
+
+/* MODUL SUARA */
+
+.Contaner-Modul {
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding-top: 20px;
+}
+.KotakModul {
+    margin-top: 60px;
+    padding: 5%;
+}
+
+.keterangan-modul {
+    text-align: center;
+}
+
+.keterangan-modul  h1 {
+    color: var(--toffee-brown);
+}
+
+.keterangan-modul p {
+    margin-top: 10px;
+    color: var(--toffee-brown);
+    text-align: justify;
+}
+
+.KotakListModul {
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Bayangan halus */
+    border-left: 5px solid var(--lime-moss); /* Aksen warna penanda di kiri */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.KotakListModul:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.KotakListModul h3{
+    margin: 0 0 8px 0;
+    font-size: 1.2rem;
+    color: #2c3e50;
+}
+
+.KotakListModul p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0 0 15px 0;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+audio {
+    width: 100%; /* Memenuhi lebar kartu */
+    outline: none;
+    border-radius: 8px; /* Sedikit melengkung agar senada dengan kartu */
+ }
+        
+
+ /* Mempercantik tampilan audio bawaan browser (khusus Webkit/Chrome/Safari) */
+audio::-webkit-media-controls-panel {
+    background-color: #f1f3f5;
+}
 
